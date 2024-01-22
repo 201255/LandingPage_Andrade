@@ -1,0 +1,30 @@
+.box {
+  position: absolute;
+}
+
+.section-about-us {
+
+  margin: auto;
+  width: 670.003px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.subtitle-blue {
+  color: rgb(0, 46, 114);
+  font-size: 70px;
+  font-family: 'Lalezar', system-ui;
+}
+
+.box-about {
+  margin: auto;
+  width: 670.003px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.line-left {
+  width: 189.003px;
+  height: 5px;
+  flex-shrink: 0;
+}
