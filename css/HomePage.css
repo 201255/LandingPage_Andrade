@@ -17,6 +17,168 @@ body {
   overflow: hidden;
 }
 
+.about-us-section {
+    position: relative;
+    bottom: 0;
+    /* top: 420%; */
+    left: 0;
+    font-style: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 100%;
+    height: 100%;
+    color: #0A1655; /* Texto blanco para "About Us" */
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 15px;
+    /* max-width: 10000px; */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .about-us-section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .about-us-section h2 {
+    position: relative;
+    display: inline-block;
+    /* width: 150%; */
+    padding: 0 10px; /* Espaciado a los lados del texto */
+
+  }
+
+  .about-section-2 h3 {
+    position: relative;
+    text-align: justify;
+    margin-right: 22%;
+    margin-top: 5%;
+    right: -7%;
+    font-size: 200%;
+    color: #0A1655;
+    font-style: bold;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+
+  .about-section-2 h4 {
+    position: relative;
+    text-align: justify;
+    margin-right: 22%;
+    margin-top: -2%;
+    right: -7%;
+    font-size: 200%;
+    color: #0A1655;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+
+  .about-section-2 h5 {
+    position: relative;
+    text-align: justify;
+    margin-right: 26%;
+    margin-top: -9%;
+    right: -7%;
+    font-size: 100%;
+    color: #0A1655;
+    letter-spacing: 4px;
+    font-weight: 200;
+    /* padding: 20%; */
+  }
+
+  .about-section-2 h6 {
+    position: relative;
+    text-align: justify;
+    margin-right: 26%;
+    margin-top: 5%;
+    right: -7%;
+    font-size: 100%;
+    color: #0A1655;
+    letter-spacing: 6px;
+    font-weight: 300;
+  }
+
+  .about-section-2 p {
+    position: relative;
+    text-align: justify;
+    margin-right: 26%;
+    margin-top: 3%;
+    right: -7%;
+    font-size: 100%;
+    color: #0A1655;
+    letter-spacing: 6px;
+    font-weight: 300;
+  }
+
+  .cuadro {
+    width: 250px;
+    height: 50px; 
+    top: 50%;
+    background-color: #f0f0f000; 
+    border: 4px solid #0A1655; 
+    padding: 20px; 
+    margin: 100px; 
+    margin: 50px auto 0 auto;
+    margin-left: 6.9%;
+  }
+
+  .cuadro p {
+    /* margin-top: 100%; */
+    right: 1%;
+    text-align: center;
+    margin: -5%; /* Elimina el margen predeterminado del párrafo */
+    white-space: nowrap; 
+    font-size: 90%;
+    font-weight: 700;
+  }
+
+  .about-us-section h2::before,
+  .about-us-section h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 200%;
+    height: 2px;
+    background-color: #000000; /* Color de las líneas */
+  }
+
+  .about-us-section h2::before {
+    left: 0;
+    transform: translateX(-104%);
+  }
+
+  .about-us-section h2::after {
+    right: 0;
+    transform: translateX(100%);
+  }
+
+  .gray-box {
+    background-color: #0a17557a;
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    right: 8%;
+    bottom: 0;
+    width: 30%; /* ajusta el ancho según tus preferencias */
+    height: 700%;
+    /* max-width: 70%; */
+    /* box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3); */
+    /* transform: scaleX(1.01); /* ajusta el valor según tus preferencias para escalar la anchura hacia la izquierda */
+    /* transform-origin: 0 100%;   */
+  }
+
+  .depth-image {
+    width: 100%;
+    height: 100%;
+    right: 80%;
+    margin-left: -25%;
+    /* max-width: 150px; */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: scaleY(1.06); /* ajusta el valor según tus preferencias para escalar la imagen hacia abajo */
+    transform-origin: 0 0;
+    margin-bottom: 13%;
+  }
 
 #logo {
   /* top: 60; */
