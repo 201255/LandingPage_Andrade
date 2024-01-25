@@ -2,3 +2,7 @@
     background-color: blue;
 }
     
+.overlay{
+    /* filter: grayscale(50%); */
+    box-shadow: -1200px color(srgb red green blue);
+}

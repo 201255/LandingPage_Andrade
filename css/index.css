@@ -2,29 +2,22 @@
   position: absolute;
 }
 
-.section-about-us {
-
-  margin: auto;
-  width: 670.003px;
-  height: 100px;
-  flex-shrink: 0;
+.contenido {
+  padding-top: 71px;
 }
 
-.subtitle-blue {
-  color: rgb(0, 46, 114);
-  font-size: 70px;
-  font-family: 'Lalezar', system-ui;
-}
 
-.box-about {
-  margin: auto;
-  width: 670.003px;
-  height: 100px;
-  flex-shrink: 0;
-}
+@media screen and (max-width: 768px) {
+  /* .background-image {
+    height: 50vh;
+  }
 
-.line-left {
-  width: 189.003px;
-  height: 5px;
-  flex-shrink: 0;
+  .centered-text h1 {
+    font-size: 1.5em;
+    top: 1000;
+  } */
+
+  .contenido {
+    padding-top: 80px;
+  }
 }

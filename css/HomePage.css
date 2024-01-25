@@ -1,6 +1,10 @@
 body {
-  margin-top: 80;
+  margin-top: 0;
   padding: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .blue-bar {
@@ -36,7 +40,66 @@ body {
   font-style: bold;
 }
 
-@media screen and (max-width: 768px) {
+.title {
+  margin-top: 50px;
+  font-size: 90px;
+  color: white;
+  font-family: 'Lalezar', system-ui;
+}
+
+.subtitle-text {
+  /* font-size: 20; */
+  color: white;
+  font-size: 35px;
+}
+
+
+/* tipo de texto */
+.text-forum {
+  font-family: 'Forum', serif;
+}
+
+
+
+/*Media querys  */
+/* pantallas largas */
+@media screen and (min-width: 2559px) {
+
+  .title {
+    font-size: 70px;
+  }
+
+  .subtitle-text {
+    font-size: 23px;
+  }
+}
+/* pantallas largas */
+@media screen and (max-width: 1212px) {
+
+  .title {
+    font-size: 70px;
+  }
+
+  .subtitle-text {
+    font-size: 23px;
+  }
+}
+
+
+/* pantalla laptops */
+@media screen and (max-width:913px) and (max-width: 1024px) {
+
+  .title {
+    font-size: 60px;
+  }
+
+  .subtitle-text {
+    font-size: 24px;
+  }
+}
+
+/* pantalla tablets  */
+@media screen  and (max-width: 768px) and (max-width:791px) {
   header {
     flex-direction: column;
     text-align: center;
@@ -50,68 +113,66 @@ body {
     position: static;
     margin-bottom: 10px;
   }
-}
 
-.background-image {
-  position: relative;
-  height: 125vh;
-  overflow: hidden;
-  /* filter: grayscale(10%);  */
-
-}
-
-.carousel-item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Ajusta la opacidad según tus preferencias */
-  }
-  
-  .carousel-item img {
-    object-fit: cover; /* Para asegurar que la imagen cubra completamente el contenedor */
+  .title {
+    font-size: 50px;
+    /*tamaño para dispositvos moviles  */
   }
 
-.background-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  .subtitle-text {
+    font-size: 18px;
+  }
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
+/* pantalla largos */
+@media screen and (min-width:375px)and (max-width: 426px) {
+
+  .title {
+    font-size: 30px;
+  }
+
+  .subtitle-text {
+    font-size: 12px;
+  }
 }
 
-.centered-text {
-  position: absolute;
-  top: 42%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  z-index: 1;
-  /* letter-spacing: 100px;  */
+/* panatalla medianos */
+@media screen and (min-width:314px) and (max-width: 376px) {
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle-text {
+    font-size: 10px;
+  }
 }
 
-.centered-text h1 {
-  font-size: 100px;
-  font-weight: bold;
-  margin: 0;
-  margin-top: 5%;
-  /* letter-spacing: 2px; */
+/* panatalla medianos */
+@media screen and (max-width: 280px)  {
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle-text {
+    font-size: 10px;
+  }
 }
+
+
+/* panatalla pequeñas */
+/* @media screen and (max-width: 320px) {
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle-text {
+    font-size: 9px;
+  }
+} */
+
 
 .centered-text p {
   font-size: 1.2em;
@@ -123,42 +184,33 @@ body {
   .background-image {
     height: 50vh;
   }
-
-  .centered-text h1 {
-    font-size: 1.5em;
-    /* top: 1000; */
-  }
 }
 
 .custom-enlarged-image {
-    /* max-height: 25000px;  */
-    height: 980px;
-    margin: auto; /* Para centrar la imagen horizontalmente */
-    display: block;
-  }
+  /* max-height: 25000px;  */
+  height: 980px;
+  margin: auto;
+  /* Para centrar la imagen horizontalmente */
+  display: block;
+}
 
 
 .arrow-down {
-  position: absolute;
-  bottom: 20%;
-  top: 65%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2em;
-  /* Ajusta el tamaño del ícono según sea necesario */
-  color: white;
+  color: white; 
   /* Ajusta el color según sea necesario */
   animation: arrowAnimation 1s infinite alternate;
 }
 
 @keyframes arrowAnimation {
-    0% {
-      transform: translateX(-50%) translateY(0);
-    }
-    100% {
-      transform: translateX(-50%) translateY(2vw); /* Ajusta este valor según sea necesario */
-    }
+  0% {
+    transform: translateX(0%) translateY(0);
   }
+
+  100% {
+    transform: translateX(0%) translateY(5vw);
+    /* Ajusta este valor según sea necesario */
+  }
+}
 
 @media screen and (max-width: 768px) {
   .arrow-down {
