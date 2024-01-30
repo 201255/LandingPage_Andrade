@@ -107,3 +107,8 @@ p3 {
   display: grid;
   place-items: center;
 }
+
+.center-left{
+  display: flex;
+  align-items: center;
+}
