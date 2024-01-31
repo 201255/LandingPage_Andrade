@@ -48,7 +48,7 @@ h2:before,
 h2:after {
   content: "";
   flex: 1 1;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #FEC70C;
   margin: auto;
 }
 
